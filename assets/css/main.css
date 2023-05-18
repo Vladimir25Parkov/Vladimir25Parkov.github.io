@@ -2808,8 +2808,10 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 0.5rem 0 0;
+			padding: 0;
 			vertical-align: middle;
+			flex-grow: 1;
+			flex-basis: 0;
 		}
 
 			ul.icons li:last-child {
@@ -2822,6 +2824,8 @@ input, select, textarea {
 				line-height: 2.25rem;
 				display: inline-block;
 				text-align: center;
+				flex-grow: 1;
+				flex-basis: 0;
 				border-radius: 100%;
 				font-size: 1.25rem;
 			}
@@ -3615,7 +3619,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(148, 191, 21, 0.175);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3625,6 +3629,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		justify-content: space-between;
 	}
 
 		#nav ul.divided li {
@@ -3743,6 +3748,8 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			margin-bottom: 0;
+			justify-content: space-between;
+
 		}
 
 		@media screen and (max-width: 980px) {
